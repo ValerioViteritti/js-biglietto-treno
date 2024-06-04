@@ -17,7 +17,7 @@ let numKm = parseInt(prompt("Comunica quanti chilometri devi percorrere 'numeri 
 let ageUser = parseInt(prompt("Comunica quanti anni hai. 'anni compuiti'"));
 
     // console punti 1 - 2.
-    console.log("Chilometri da effettuare: ", numKm, " - Anni Utente: ", ageUser);
+    console.log("Chilometri da effettuare: ", numKm, "km", " - Anni Utente: ", ageUser, "anni");
 
 
 
@@ -29,8 +29,8 @@ let ageUser = parseInt(prompt("Comunica quanti anni hai. 'anni compuiti'"));
     let totalPriceX = Math.round(totalPrice * 100) / 100
 
         // console punti 3.1
-        console.log("Il prezzo del biglietto è: ", totalPrice );
-        console.log("Il prezzo del biglietto arrotondato è: ", totalPriceX );
+        console.log("Il prezzo del biglietto è: ", totalPrice, "€" );
+        console.log("Il prezzo del biglietto arrotondato è: ", totalPriceX, "€" );
 
 
     // 3.2 - va applicato uno sconto del 20% per i minorenni
@@ -39,8 +39,8 @@ let ageUser = parseInt(prompt("Comunica quanti anni hai. 'anni compuiti'"));
     let totalPrice20X = Math.round(totalPrice20 * 100) / 100
 
         // console punti 3.2
-        console.log("Il prezzo del biglietto con lo sconto del 20% riservato agli under18 è: ", totalPrice20);
-        console.log("Il prezzo del biglietto con lo sconto del 20% riservato agli under18 arrotondato è: ", totalPrice20X);
+        console.log("Il prezzo del biglietto con lo sconto del 20% riservato agli under18 è: ", totalPrice20, "€" );
+        console.log("Il prezzo del biglietto con lo sconto del 20% riservato agli under18 arrotondato è: ", totalPrice20X, "€" );
 
     // 3.3 - va applicato uno sconto del 40% per gli over 65
 
@@ -48,8 +48,8 @@ let ageUser = parseInt(prompt("Comunica quanti anni hai. 'anni compuiti'"));
     let totalPrice40X = Math.round(totalPrice40 * 100) / 100
 
         // console punti 3.3
-        console.log("Il prezzo del biglietto con lo sconto del 40% riservato agli over65 è: ", totalPrice40);
-        console.log("Il prezzo del biglietto con lo sconto del 40% riservato agli over65 arrotondato è: ", totalPrice40X);
+        console.log("Il prezzo del biglietto con lo sconto del 40% riservato agli over65 è: ", totalPrice40, "€" );
+        console.log("Il prezzo del biglietto con lo sconto del 40% riservato agli over65 arrotondato è: ", totalPrice40X, "€" );
 
 
 // 4 - Risultato a schermo
@@ -66,9 +66,7 @@ let finalPrice;
         finalPrice = totalPriceX;
     }
 
-    console.log(finalPrice);
 
-
-document.getElementById("xxx").innerHTML = "Il prezzo del tuo biglietto è: " + finalPrice + "€";
+document.getElementById("xxx").innerHTML = "Il prezzo del tuo biglietto è di: " + finalPrice + " €";
 
     
