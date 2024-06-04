@@ -17,7 +17,7 @@ let numKm = parseInt(prompt("Comunica quanti chilometri devi percorrere 'numeri 
 let ageUser = parseInt(prompt("Comunica quanti anni hai. 'anni compuiti'"));
 
     // console punti 1 - 2.
-    console.log(numKm, ageUser);
+    console.log("Chilometri da effettuare: ", numKm, " - Anni Utente: ", ageUser);
 
 
 
@@ -28,20 +28,20 @@ let ageUser = parseInt(prompt("Comunica quanti anni hai. 'anni compuiti'"));
     let totalPrice = priceKm * numKm;
 
         // console punti 3.1
-        console.log(totalPrice);
+        console.log("Il prezzo del biglietto è: ", totalPrice );
 
     // 3.2 - va applicato uno sconto del 20% per i minorenni
 
     let totalPrice20 = (priceKm * numKm) /100 * 80;
 
         // console punti 3.2
-        console.log(totalPrice20);
+        console.log("Il prezzo del biglietto con lo sconto del 20% riservato agli under18 è: ", totalPrice20);
 
     // 3.3 - va applicato uno sconto del 40% per gli over 65
 
     let totalPrice40 = (priceKm * numKm) /100 * 60;
 
         // console punti 3.3
-        console.log(totalPrice40);
+        console.log("Il prezzo del biglietto con lo sconto del 40% riservato agli over65 è: ", totalPrice40);
 
     
