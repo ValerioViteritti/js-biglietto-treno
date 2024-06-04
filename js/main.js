@@ -9,6 +9,7 @@ Questo richiederà un minimo di ricerca.
 */
 
 const priceKm = 0.21;
+
 // 1 - chiedere all’utente il numero di chilometri che vuole percorrere
 
 let numKm = parseInt(prompt("Comunica quanti chilometri devi percorrere 'numeri interi'"));
@@ -19,10 +20,7 @@ let ageUser = parseInt(prompt("Comunica quanti anni hai. 'anni compuiti'"));
     // console punti 1 - 2.
     console.log("Chilometri da effettuare: ", numKm, "km", " - Anni Utente: ", ageUser, "anni");
 
-
-
 // 3 - calcolare il prezzo totale del viaggio
-
 
     // 3.1 - il prezzo del biglietto è definito in base ai km (0.21 € al km)
     let totalPrice = priceKm * numKm;
@@ -31,7 +29,6 @@ let ageUser = parseInt(prompt("Comunica quanti anni hai. 'anni compuiti'"));
         // console punti 3.1
         console.log("Il prezzo del biglietto è: ", totalPrice, "€" );
         console.log("Il prezzo del biglietto arrotondato è: ", totalPriceX, "€" );
-
 
     // 3.2 - va applicato uno sconto del 20% per i minorenni
 
@@ -50,7 +47,6 @@ let ageUser = parseInt(prompt("Comunica quanti anni hai. 'anni compuiti'"));
         // console punti 3.3
         console.log("Il prezzo del biglietto con lo sconto del 40% riservato agli over65 è: ", totalPrice40, "€" );
         console.log("Il prezzo del biglietto con lo sconto del 40% riservato agli over65 arrotondato è: ", totalPrice40X, "€" );
-
 
 // 4 - Risultato a schermo
 
