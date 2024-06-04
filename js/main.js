@@ -24,7 +24,7 @@ let ageUser = parseInt(prompt("Comunica quanti anni hai. 'anni compuiti'"));
 
     // 3.1 - il prezzo del biglietto è definito in base ai km (0.21 € al km)
     let totalPrice = priceKm * numKm;
-    let totalPriceX = Math.round(totalPrice * 100) / 100
+    let totalPriceX = (Math.round(totalPrice * 100) / 100).toFixed(2);
 
         // console punti 3.1
         console.log("Il prezzo del biglietto è: ", totalPrice, "€" );
@@ -33,7 +33,7 @@ let ageUser = parseInt(prompt("Comunica quanti anni hai. 'anni compuiti'"));
     // 3.2 - va applicato uno sconto del 20% per i minorenni
 
     let totalPrice20 = (priceKm * numKm) /100 * 80;
-    let totalPrice20X = Math.round(totalPrice20 * 100) / 100
+    let totalPrice20X = (Math.round(totalPrice20 * 100) / 100).toFixed(2);
 
         // console punti 3.2
         console.log("Il prezzo del biglietto con lo sconto del 20% riservato agli under18 è: ", totalPrice20, "€" );
@@ -42,7 +42,7 @@ let ageUser = parseInt(prompt("Comunica quanti anni hai. 'anni compuiti'"));
     // 3.3 - va applicato uno sconto del 40% per gli over 65
 
     let totalPrice40 = (priceKm * numKm) /100 * 60;
-    let totalPrice40X = Math.round(totalPrice40 * 100) / 100
+    let totalPrice40X = (Math.round(totalPrice40 * 100) / 100).toFixed(2);
 
         // console punti 3.3
         console.log("Il prezzo del biglietto con lo sconto del 40% riservato agli over65 è: ", totalPrice40, "€" );
